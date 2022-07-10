@@ -1,0 +1,395 @@
+@font-face {
+    font-family: "BYekan";
+    src: url('fonts/BYekan.ttf') format('ttf');
+}
+
+
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+body {
+    background: #fff!important;
+    font-family: 'YekanBakh_Regural'!important;
+    direction: ltr;
+}
+
+a {
+    text-decoration: none!important;
+    transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+}
+
+li {
+    list-style: none;
+}
+
+ :focus {
+    outline: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.p0 {
+    padding: 0!important;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+
+/* Home */
+
+
+/* header */
+
+header {
+    width: 100%;
+    display: block;
+    height: 70px;
+    background: #171717;
+}
+
+header .logo {
+    width: 200px;
+    display: flex;
+    float: left;
+    margin-top: 45px;
+    margin-left: 90px;
+}
+
+header .logo h1 {
+    color: #fff;
+}
+
+header .nav-main {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 600px;
+    height: 100%;
+}
+
+header .nav-main ul {
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+
+header .nav-main ul>li {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+header .nav-main ul>li a {
+    color: #fff;
+    font: 12px arial;
+    padding-bottom: 5px;
+}
+
+header .nav-main ul>li a:hover {
+    color: #fff;
+    font: 12px arial;
+    text-decoration: 3px underline #2a5894 !important;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+header .search {
+    display: flex;
+    float: left;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.search>i {
+    margin-right: 50px;
+}
+
+.search span {
+    color: #646464;
+    font: 10px arial;
+}
+
+.search .white {
+    color: #fff;
+    font: 10px arial;
+}
+
+.search .fas {
+    color: #fff;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+header .social-media {
+    display: inline-flex;
+    float: left;
+    margin-top: 39px;
+    margin-left: 50px;
+}
+
+.social-media .fab {
+    color: #fff;
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+
+/* upper main */
+
+.upper-main {
+    width: 100%;
+    height: 650px;
+}
+
+.upper-main img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*------------ media_screen ---------------*/
+
+@media only screen and (max-width: 250px) {}
+
+@media only screen and (max-width: 300px) and (min-width: 250px) {}
+
+@media only screen and (max-width: 350px) and (min-width: 300px) {}
+
+@media only screen and (max-width: 400px) and (min-width: 350px) {}
+
+@media only screen and (max-width: 450px) and (min-width: 400px) {}
+
+@media only screen and (max-width: 500px) and (min-width: 450px) {}
+
+@media only screen and (max-width: 550px) and (min-width: 500px) {}
+
+@media only screen and (max-width: 600px) and (min-width: 550px) {}
+
+@media only screen and (max-width: 650px) and (min-width: 600px) {}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media (min-width: 600px) {}
+
+@media (max-width: 535px) {}
+
+@media (max-width: 600px) {}
+
+
+/* sm */
+
+@media (min-width: 768px) {}
+
+@media (max-width: 765px) {}
+
+
+/* md */
+
+@media (min-width: 992px) {}
+
+@media (max-width: 992px) {}
+
+
+/* lg */
+
+@media (max-width: 1200px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1320px) {}
+
+@media (min-width: 320px) and (max-width: 350px) {}
+
+@media (min-width: 350px) and (max-width: 375px) {}
+
+@media (min-width: 375px) and (max-width: 400px) {}
+
+@media (min-width: 400px) and (max-width: 536px) {}
